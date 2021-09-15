@@ -1,0 +1,28 @@
+GET http://localhost:3000/tasks
+
+###
+POST http://localhost:3000/tasks
+Content-Type: application/json
+
+{
+    "name":"asdahsdkhaksjhdkjadsS",
+    "description":"asdhaskjdhkajsdhk"
+}
+
+###
+GET http://localhost:3000/tasks/UuHi7HfICAy4176A8KkKT
+
+###
+DELETE http://localhost:3000/tasks/8FANxI77vAGz4O8iyNzUZ
+
+###
+PUT http://localhost:3000/tasks/NCdOLLUQ2xi0X9z3f7myy
+Content-Type: application/json
+
+{
+    "name":"tarea actualizada",
+    "description":"descripcion actualizada de la tarea"
+}
+
+###
+GET http://localhost:3000/tasks/count
