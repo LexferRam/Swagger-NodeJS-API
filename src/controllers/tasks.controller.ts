@@ -49,7 +49,7 @@ export const deleteTask: Handler = (req, res) => {
 
     const deleteTask = getConnection().get('tasks').remove({id: req.params.id}).write()
 
-    res.json(deleteTask)
+    res.json(deleteTask[0])
 }
 
 export const updateTask: Handler = (req, res) => {
